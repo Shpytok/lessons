@@ -1,0 +1,52 @@
+@import url("reset.css");
+
+h1 {
+	color: blueviolet;
+}
+
+h2 {
+	color: blue;
+}
+
+.header {
+	color: rgb(238, 181, 96);
+}
+
+.list>ol>li {
+	color: yellowgreen;
+}
+
+.text-4>ul>li {
+	color: yellow;
+}
+
+.text-6>ul>li {
+	color: rgb(139, 1, 109);
+}
+
+.text-1,
+.text-2 {
+	color: gold;
+}
+
+#sklo {
+	color: aqua;
+}
+
+[class="block__title"] {
+	color: rosybrown;
+}
+
+.text-5~p {
+	color: red;
+}
+
+.text-5+p {
+	color: gray;
+}
+
+.text-6>p {
+	color: brown;
+}
+
+.text-6 ul {}
