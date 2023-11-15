@@ -1,0 +1,126 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	color: #7d7d7d;
+	font-size: 18px;
+}
+
+.block {
+	max-width: 692px;
+	margin: 0 auto;
+}
+
+.image {
+	margin-bottom: 37px;
+}
+
+.title,
+.title-figma,
+.title-figma-1,
+.title-list-figma {
+	font-family: "Poppins", sans-serif;
+}
+
+.title {
+	color: #37393F;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12.5px;
+}
+
+.text-figma {
+	line-height: 1.46;
+	margin-bottom: 40px;
+}
+
+.title-figma {
+	color: #6b77e5;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+
+.title-list {
+	font-size: 0;
+	margin-bottom: 48px;
+}
+
+.image-1 {
+	width: 331px;
+	margin-right: 29px;
+}
+
+.content-list {
+	display: inline-block;
+	width: 332px;
+	font-size: 18px;
+}
+
+.title-figma-1 {
+	color: #37393f;
+	font-size: 25px;
+	line-height: 1.27;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.title-list-figma {
+	color: #40ddb6;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 23.5px;
+}
+
+.list-figma li {
+	margin-bottom: 35px;
+}
+
+
+.block-2 {
+	max-width: 1169px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.text {
+	display: inline-block;
+	max-width: 563px;
+	margin: 0px 38px 172px 0px;
+}
+
+.heading {
+	color: #D06B00;
+	font-size: 28px;
+	margin-bottom: 36px;
+}
+
+.heading-2 {
+	color: #0E333D;
+	font-family: DM Serif Text;
+	font-size: 59px;
+	line-height: 1.47;
+	margin-bottom: 25px;
+}
+
+.text-1 {
+	color: #474747;
+	font-size: 20px;
+	line-height: 1.80;
+}
+
+.block-3 {
+	display: inline-block;
+	max-width: 568px;
+	vertical-align: top;
+	margin-bottom: 140px;
+
+}
+
+.image-2 {
+	margin-right: 22px;
+}
