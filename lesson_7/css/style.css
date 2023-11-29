@@ -1,0 +1,315 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	color: #7D7D7D;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+
+.content {
+	font-family: "DM Serif Text";
+	color: blue;
+	font-size: 25px;
+
+}
+
+.licencing,
+.content,
+.project-information,
+.clothing,
+.what-we-do,
+.practice {
+	max-width: 1281px;
+	padding: 30px;
+	margin: 0 auto 50px;
+	border: 5px solid #37393F;
+}
+
+
+.block-licencing {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.subtitle-blue {
+	border: 6px solid #40DDB6;
+	display: inline-block;
+
+}
+
+.subtitle {
+	display: inline-block;
+	color: #37393F;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.title,
+.title-2,
+.title-3,
+.title-project {
+	font-family: "Poppins", sans-serif;
+}
+
+.title {
+	color: #37393F;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.title-2 {
+	color: #37393F;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 11px;
+}
+
+.text {
+	line-height: 1.46;
+}
+
+.title-3,
+.title-h3 {
+	color: #37393F;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.title-3 span,
+.title-h3 span {
+	color: #40DDB6;
+	font-weight: 400;
+}
+
+.text-2 {
+	color: #40DDB6;
+	line-height: 1.46;
+}
+
+.block-2 a {
+	color: #40DDB6;
+	font-weight: 500;
+}
+
+.block {
+	margin-bottom: 34px;
+}
+
+.block-1,
+.title-h3 {
+	margin-bottom: 100px;
+}
+
+.block-1-1 {
+	margin-bottom: 24px;
+}
+
+.title-3 {
+	margin-bottom: 8px;
+}
+
+
+.project-information {
+	max-width: 885px;
+}
+
+.title-project {
+	color: #37393F;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.27;
+	margin-bottom: 13px;
+}
+
+.project p {
+	line-height: 1.46;
+}
+
+.project p,
+.project li {
+	margin-bottom: 35px;
+}
+
+.project ul,
+.project ol {
+	font-weight: 500;
+	line-height: 1.46;
+	padding-left: 40px;
+	margin-bottom: 35px;
+}
+
+.project ol {
+	list-style: decimal-leading-zero;
+}
+
+
+.clothing-violet {
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8A33FD;
+	margin-right: 15px;
+	display: inline-block;
+
+
+}
+
+.clothing {
+	max-width: 1300px;
+	font-family: "Causten", sans-serif;
+	color: #807d7e;
+	font-size: 20px;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+
+.title-clothing {
+	display: inline-block;
+}
+
+.title-clothing-violet {
+	margin-bottom: 30px;
+}
+
+.text-3 {
+	padding-left: 21px;
+}
+
+.title-clothing {
+	color: #3C4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+}
+
+.subtitle-clothing,
+.link {
+	color: #807D7E;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+
+.text-3 p {
+	margin-bottom: 25px;
+}
+
+.text-clothing {
+	font-weight: 700;
+}
+
+
+.what-we-do {
+	max-width: 1200px;
+}
+
+.text-what-we-do,
+.image {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.text-what-we-do {
+	font-family: "Cormorant Infant", sans-serif;
+	max-width: 503px;
+	padding-top: 70px;
+	margin-right: 75px;
+}
+
+.image {
+	font-size: 0;
+}
+
+.subtitle-what-we-do {
+	color: #D58417;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 27px;
+}
+
+.title-what-we-do {
+	color: #000;
+	font-size: 64px;
+	line-height: 1;
+	margin-bottom: 31px;
+}
+
+.text-what-we-do p {
+	color: #606060;
+	font-size: 30px;
+	line-height: 1.4;
+}
+
+.image-1,
+.image-2 {
+	vertical-align: middle;
+}
+
+.image-1 {
+	width: 187px;
+	height: 350px;
+	margin-right: 20px;
+}
+
+.image-2 {
+	width: 318px;
+	height: 519px;
+}
+
+
+.title-practice {
+	border: 5px dashed red;
+	text-align: center;
+}
+
+.practice p {
+	border: 5px double black;
+	border-radius: 20px;
+	margin-bottom: 20px;
+
+}
+
+.practice {
+	font-family: "DM Serif Text";
+	color: green;
+	font-size: 25px;
+	outline: 5px dotted red;
+}
+
+.border-radius {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: orangered;
+	border-radius: 56% 44% 100% 0% / 100% 44% 56% 0%;
+	margin: 0px 50px 20px 0px;
+	box-shadow: 5px 5px 30px 10px red;
+}
+
+.border-radius-1 {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: orangered;
+	border-radius: 50%;
+	box-shadow: inset 5px 5px 30px 10px red;
+	opacity: 0.5;
+}
+
+.border-radius-2 {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: orangered;
+	border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+	box-shadow: 5px 5px 30px 10px red;
+	visibility: hidden;
+}
