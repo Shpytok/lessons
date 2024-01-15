@@ -1,0 +1,383 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+body {}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+
+.transition {
+	font-size: 0;
+	padding: 100px 0;
+}
+
+.transition__container {
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.transition__fon {
+	width: 300px;
+	height: 300px;
+	background: black;
+	display: inline-block;
+	margin: 0px 30px 30px 0px;
+	vertical-align: top;
+}
+
+.transition__fon:hover .transition__duration {
+	transition-duration: 1s;
+	transform: translate(20px, 20px);
+}
+
+.text {
+	width: 300px;
+	height: 300px;
+	background: green;
+	font-family: "Inter", sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 130px;
+}
+
+.transition__fon .transition__property {
+	transition-duration: 0.5s, 3s;
+	transition-property: background-color, transform;
+}
+
+.transition__fon:hover .transition__property {
+	background-color: aquamarine;
+	transform: scale(0.5);
+}
+
+.transition__fon .transition__delay {
+	transition-duration: 0.8s, 0.5s, 1s;
+	transition-delay: 0s, 0.8s, 1.3s;
+	transition-property: width, transform, background-color;
+}
+
+.transition__fon:hover .transition__delay {
+	transform: rotate(45deg);
+	width: 400px;
+	background-color: gray;
+}
+
+.transition__fon .transition__timing-function {
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+.transition__fon:hover .transition__timing-function {
+	width: 400px;
+	height: 400px;
+	transform: skew(10deg, 15deg);
+	background-color: aqua;
+}
+
+.keyframes__fon {
+	width: 300px;
+	height: 300px;
+	background-color: gray;
+	display: inline-block;
+	position: relative;
+}
+
+.keyframes__action {
+	width: 300px;
+	height: 300px;
+	background-color: green;
+}
+
+.keyframes__fon {
+	animation: action-left 10s linear infinite alternate;
+}
+
+.keyframes__action {
+	animation: action 6s linear infinite alternate 0.5s;
+}
+
+@keyframes action {
+	0% {
+		transform: rotate(360deg);
+	}
+
+	50% {}
+
+	100% {
+		background-color: red;
+	}
+}
+
+@keyframes action-left {
+	0% {
+		left: 10%;
+	}
+
+	50% {}
+
+	100% {
+		left: 70%;
+	}
+}
+
+/* ========================================================================= */
+.main {
+	padding: 350px;
+	width: 100%;
+	height: 1100px;
+	animation-name: background-car;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes background-car {
+	0% {
+		background: url(../img/main/road.webp) 0px 0/cover;
+	}
+
+	100% {
+		background: url(../img/main/road.webp) 5000px 0/cover;
+	}
+}
+
+
+.car__container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 250px 0;
+}
+
+.frame {
+	position: relative;
+
+}
+
+
+.frame__body {
+	width: 650px;
+	height: 150px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: red;
+	border-radius: 45% 10% 0% 0%;
+
+}
+
+.frame__right-wheels,
+.frame__left-wheels {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	background: #fff;
+	border: 8px solid black;
+	border-radius: 50%;
+	padding: 3px;
+	z-index: 5;
+	animation-name: wheels;
+	animation-duration: 0.1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes wheels {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+.frame__left-wheels {
+	background: url(../img/main/wheel.webp) center / contain no-repeat;
+	top: 270px;
+	left: 195px;
+}
+
+.frame__right-wheels {
+	background: url(../img/main/wheel.webp) center / contain no-repeat;
+	top: 270px;
+	left: 620px;
+}
+
+.frame__left-door,
+.frame__right-door {
+	position: absolute;
+	width: 150px;
+	height: 147px;
+	background-color: red;
+	border: 1px solid #a5a5a5;
+	transform: skew(-5deg);
+	z-index: 4;
+}
+
+.frame__left-door {
+	top: 200px;
+	left: 335px;
+	border-radius: 0px 0 5px 0px;
+}
+
+.frame__right-door {
+	top: 200px;
+	left: 490px;
+	border-radius: 0px 0px 0px 5px;
+}
+
+.frame__handle-right-door,
+.frame__handle-left-door {
+	position: absolute;
+	width: 35px;
+	height: 10px;
+	background-color: black;
+	border-radius: 30%;
+	z-index: 5;
+}
+
+.frame__handle-left-door {
+	top: 215px;
+	left: 435px;
+}
+
+.frame__handle-right-door {
+	top: 215px;
+	left: 590px;
+}
+
+
+.frame__left-detals,
+.frame__right-detals {
+	position: absolute;
+	width: 40px;
+	height: 20px;
+	background-color: black;
+}
+
+.frame__left-detals {
+	top: 331px;
+	left: 124px;
+	border-radius: 0px 0px 2px 5px;
+}
+
+.frame__right-detals {
+	top: 331px;
+	left: 749px;
+	width: 27px;
+	border-radius: 0px 0px 5px 2px;
+}
+
+.frame__center-detals {
+	position: absolute;
+	top: 349px;
+	left: 311px;
+	width: 313px;
+	height: 5px;
+	background-color: black;
+}
+
+.frame__top {
+	position: absolute;
+	top: 90px;
+	left: 303px;
+	background-color: black;
+	width: 400px;
+	height: 121px;
+	border-radius: 65% 50% 0% 0%;
+}
+
+.frame__left-window-top,
+.frame__right-window-top {
+	position: absolute;
+	background-color: #929292;
+	transform: skew(-5deg);
+}
+
+.frame__left-window-top {
+	top: 26px;
+	left: 42px;
+	width: 150px;
+	height: 83px;
+	border-radius: 100% 0% 0% 0%;
+}
+
+.frame__right-window-top {
+	top: 26px;
+	left: 198px;
+	width: 149px;
+	height: 83px;
+	border-radius: 0% 45% 0% 0%;
+}
+
+
+
+.frame__left-headlights,
+.frame__right-headlights {
+	position: absolute;
+}
+
+.frame__left-headlights {
+	top: 238px;
+	left: 125px;
+	width: 30px;
+	height: 25px;
+	background-color: aquamarine;
+	border-radius: 100% 0% 50% 0%;
+	border-right: 3px solid grey;
+	border-bottom: 3px solid grey;
+}
+
+.frame__right-headlights {
+	top: 202px;
+	left: 746px;
+	width: 30px;
+	height: 25px;
+	background-color: aquamarine;
+	border-radius: 0% 100% 47% 50%;
+	border-left: 2px solid grey;
+	border-bottom: 2px solid grey;
+}
+
+.frame__light-left-headlights {
+	width: 30px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	background-color: white;
+	border-radius: 100% 0% 50% 0%;
+	border-right: 3px solid grey;
+	border-bottom: 3px solid grey;
+	visibility: hidden;
+}
+
+.frame__light-right-headlights {
+	position: absolute;
+	top: 0px;
+	left: -2px;
+	width: 30px;
+	height: 25px;
+	background-color: rgb(187, 8, 8);
+	border-radius: 0% 100% 47% 50%;
+	border-left: 2px solid grey;
+	border-bottom: 2px solid grey;
+	visibility: hidden;
+}
+
+.frame:hover .frame__light-left-headlights {
+	visibility: visible;
+}
+
+.frame:hover .frame__light-right-headlights {
+	visibility: visible;
+}
